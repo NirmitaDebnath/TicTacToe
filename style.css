@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: bisque;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tictac {
+    font-size: 40px;
+    padding: 4vh;
+    color: grey;
+}
+.container {
+    background-color: rgb(49, 69, 69);
+    height: 70vh;
+    width: 70vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.num {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 12px;
+    border: 3px solid rgb(127, 88, 46);
+    background-color: rgb(202, 197, 201);
+    font-size: 100px;
+    color: black;
+}
+.num:hover{
+    background-color: cadetblue;
+}
+.new {
+    margin: 40px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(21, 51, 47);
+    background-color: rgb(215, 212, 204);
+    border-radius: 10px;
+    border: 4px double rgb(70, 68, 64);
+}
+.new:hover,.reset:hover{
+    background-color: cadetblue;
+}
+.msgbtn {
+    font-size: 100px;
+    color: cyan;
+}
+.hide {
+    display: none;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+    .tictac{
+        font-size: 30px;
+    }
+    .container{
+        height: 50vh;
+        width: 50vh;
+    }
+    .num{
+        font-size: 40px;
+    }
+    .new{
+        font-size: 15px;
+        padding: 10px 10px ;
+    }
+    .msgbtn{
+        font-size: 40px;
+    }
+  
+}
+
+@media (max-width: 300px){
+    .tictac{
+        font-size: 25px;
+    }
+    .container{
+        height: 35vh;
+        width: 35vh;
+    }
+    .num{
+        font-size: 30px;
+    }
+    .new{
+        font-size: 15px;
+        padding: 10px 10px ;
+    }
+    .msgbtn{
+        font-size: 30px;
+    }
+  
+}
